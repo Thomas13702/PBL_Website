@@ -1,10 +1,14 @@
 import styles from "@/styles/Showcase.module.scss";
+import Link from "next/link";
 
 export default function Showcase() {
   return (
     <div className={styles.showcase}>
-      <h1>Eva - The smart fire alarm</h1>
-      <h2>Lorem ipsum dolor sit amet.</h2>
+      <h1>Eva</h1>
+      <h2>The Smart fire alarm</h2>
+      <Link href={"/our-product"}>
+        <button className={styles.btn}>Learn More</button>
+      </Link>
     </div>
   );
 }
