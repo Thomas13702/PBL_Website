@@ -34,7 +34,15 @@ $radius: 0.2rem;
 }
 
 .nav {
-  border-bottom: 1px solid $clr-gray200;
+  //border-bottom: 1px solid $clr-gray200;
+  position: initial;
+
+  overflow: hidden;
+  background: transparent;
+
+  left: 0;
+  right: 0;
+  z-index: 10;
 
   &__toggle {
     position: absolute;
@@ -129,4 +137,14 @@ $radius: 0.2rem;
 
 .logout {
   cursor: pointer;
+}
+
+.white {
+  color: white;
+  fill: white;
+}
+
+.black {
+  color: black;
+  fill: black;
 }

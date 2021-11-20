@@ -1,7 +1,6 @@
 import styles from "@/styles/Navbar.module.scss";
 import Link from "next/link";
 import { FaHome } from "react-icons/fa";
-import { FaRegStar } from "react-icons/fa";
 import { useRouter } from "next/router";
 import Image from "next/image";
 
@@ -11,6 +10,13 @@ export default function NavBar() {
   const router = useRouter();
 
   // console.log("This is a uid " + uid);
+  const colour = () => {
+    if (router.pathname === "/") {
+      return "white";
+    } else {
+      return "black";
+    }
+  };
 
   return (
     <nav className={styles.nav}>
@@ -44,16 +50,20 @@ export default function NavBar() {
               <Image src="/logo.png" alt="Eva Logo" width={60} height={60} />
             </Link>
           </li>
-          <li>
-            <Link href="/favourites">
-              <a className={styles.a}>
-                Favourites <FaRegStar />
-              </a>
+          <li className={`styles.${colour()}`}>
+            <Link href="/our-product">
+              <a className={styles.a}>Our Product</a>
             </Link>
           </li>
-
-          <li className={styles.logout}>
-            <a>Logout</a>
+          <li className={`styles.${colour()}`}>
+            <Link href="/technical-research">
+              <a className={styles.a}>Technical Research</a>
+            </Link>
+          </li>
+          <li className={`styles.${colour()}`}>
+            <Link href="/about">
+              <a className={styles.a}>About</a>
+            </Link>
           </li>
         </ul>
       </div>
