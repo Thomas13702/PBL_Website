@@ -1,0 +1,12 @@
+.content {
+  text-align: center;
+}
+
+.content h1 {
+  text-decoration: underline;
+  margin-bottom: 1rem;
+}
+
+.content li {
+  list-style-type: none;
+}

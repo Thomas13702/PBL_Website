@@ -133,8 +133,8 @@ export default function Header() {
             </Link>
           </li>
           <li className={colour()}>
-            <Link href="/about">
-              <a>About</a>
+            <Link href="/contact-us">
+              <a>Contact Us</a>
             </Link>
           </li>
         </ul>
