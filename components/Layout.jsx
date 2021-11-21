@@ -21,9 +21,13 @@ export default function Layout({
         <meta name="keywords" content={keywords} />
       </Head>
       <Header uid={uid} />
-      {router.pathname === "/" && <Showcase />}
+      {router.pathname === "/" ? (
+        <Showcase />
+      ) : (
+        <div className={styles.container}>{children}</div>
+      )}
       {/* checks to see if we are on the home page */}
-      <div className={styles.container}>{children}</div>
+
       <Footer />
     </div>
   );
