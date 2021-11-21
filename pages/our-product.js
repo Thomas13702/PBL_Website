@@ -7,7 +7,7 @@ export default function ourProduct() {
       <div className={styles.content}>
         <h1>How it works</h1>
         <p>
-          We use bluetooth beans linked to a fire alarm to locate people along
+          We use bluetooth beacons linked to a fire alarm to locate people along
           with sensing the fire. Since we don’t need the positioning to be
           accurate to under a meter, we would only have two beacons in each room
           that would be able to identify when the Bluetooth device (phone) is in
